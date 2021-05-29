@@ -4,19 +4,9 @@
 
 ## Build and run
 
-You should have `gcc`, `make`, `libncurses5-dev` and `libncursesw5-dev` installed with:
+You should have `gcc` (because `__attribute__((fallthrough))` is used), `make`, and the ncurses devel library installed.
 
-```console
-$ sudo apt install gcc make libncurses5-dev libncursesw5-dev
-```
-
-on Debian-based systems, or: 
-
-```console
-$ sudo pacman -S gcc make libncurses5-dev libncursesw5-dev
-```
-
-on Arch-based systems, or the equivalent on others. Then you just need to type:
+Then you just need to type:
 
 ```console
 $ make
@@ -27,9 +17,5 @@ to build, and run with:
 ```console
 $ ./spells_curses
 ```
-
-### Notes
-
-`gcc` is needed because `__attribute--((fallthrough))` is gcc-specific.
 
 EOF
